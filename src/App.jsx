@@ -2,40 +2,37 @@ import { useState } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import reactLogo from './assets/react.svg'
 import './App.css'
 
+import About from './pages/About';
+import Main from './pages/Main';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+
+import Navbar from './components/Navbar';
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Router>
       <div className="grid-container">
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/about">About</Link>
-        </nav>
+        <Navbar />
         <main>
-          <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-          </p>
           <Switch>
             <Route path="/about">
-              <h1>About</h1>
+              <About />
             </Route>
             <Route path="/contact">
-              <h1>Contact</h1>
+              <Contact />
             </Route>
             <Route path="/portfolio">
-              <h1>Portfolio</h1>
+              <Portfolio />
             </Route>
             <Route path="/">
-              <h1>Main</h1>
+              <Main />
             </Route>
           </Switch>
         </main>
