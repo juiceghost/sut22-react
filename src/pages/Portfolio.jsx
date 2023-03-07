@@ -17,10 +17,24 @@ function Portfolio() {
 
         fetchData();
     }, []);
-
+    console.log("Hej från Portfolio")
     return (
-
-        <h1>Portfolio</h1>
+        <>
+            <h1>Portfolio</h1>
+            {isLoading ? (
+                <div>Loading ...</div>
+            ) : (
+                <ul>
+                    {data.work.map(item => (
+                        <li>
+                            <h4>{item.name}</h4>
+                            <p>{item.role}</p>
+                            <br></br>
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </>
     );
 }
 
