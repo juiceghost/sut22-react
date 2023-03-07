@@ -4,9 +4,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+
 import reactLogo from './assets/react.svg'
 import './App.css'
-
 import About from './pages/About';
 import Main from './pages/Main';
 import Portfolio from './pages/Portfolio';

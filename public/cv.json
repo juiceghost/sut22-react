@@ -1,0 +1,16 @@
+{
+    "work": [
+        {
+            "name": "Qlok",
+            "role": "Teacher"
+        },
+        {
+            "name": "Varberg",
+            "role": "Teacher"
+        },
+        {
+            "name": "Grassfish",
+            "role": "Slacker"
+        }
+    ]
+}
