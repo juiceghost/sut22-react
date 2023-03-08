@@ -1,0 +1,21 @@
+Console i all ära, men helst vill vi hitta ett sätt att skapa DOM-element utifrån vår JSON.
+
+Läs följande länk: https://www.javascripttutorial.net/dom/manipulating/create-a-dom-element/
+
+Tricket blir att hitta ett bra sätt att iterera igenom datan som kommer från json-filen. Förhoppningsvis ser er JSON ut ungefär såhär:
+[
+    {
+        ...
+    },
+    {
+        ...
+    },
+    {
+        ...
+    },
+]
+
+Om så är fallet, hur skulle vi kunna iterera igenom arrayen för att få ut ett objekt i taget? Hur skulle vi göra i C# om vi t.ex hade en lista av objekt?
+
+Skriv en funktion som tar in en array av objekt, itererar igenom den och skapar element med innehåll från objektet och stoppar in dem i DOM:en. Oroa er inte för utseendet ännu.
+

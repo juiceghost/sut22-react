@@ -1,0 +1,40 @@
+Du ska nu öva på att skapa ett JSON-dokument. Det kan se ut såhär: {
+    "name": "Krille",
+    "age": 43
+}
+
+Notera att key (det som står till vänster) alltid skrivs inuti citattecken,
+"".
+
+Value (det som står till höger) sätts inom citattecken om det är en sträng.
+
+Ett JSON kan även innehålla arrayer som värden, eller vara en array: [
+    {
+        "name": "Krille",
+        "age": 43,
+        "skills": [
+            "Teaching",
+            "Coding"
+        ]
+    },
+    {
+        "name": "Frank",
+        "age": 22
+    }
+]
+
+Ett bra sätt att validera sin JSON är att använda en JSON Formatter/Validator, t.ex:https: //jsonformatter.org/
+
+Den hjälper en att fixa eventuella småfel som glömda kommatecken eller så.
+
+Du ska nu skapa ett JSON som beskriver ett antal böcker eller filmer du läst/sett eller vill läsa/se. Skapa 3-4 st titlar till att börja med. Sträva efter 2-3 keys. Låt det vara en array av objekt.
+
+Spara denna fil tillsammans med ditt projekt du använde i 01 och 02. Den bör ligga bredvid index.html för maximal enkelhet.
+
+Du ska nu försöka hämta in denna fil i din JS-kod, förslagsvis genom fetch:
+
+Se t.ex https: //developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+Om du loggar datan precis som i exemplet så kan du högerklicka på outputen i Console och välja Store as global variable. Den kommer då säga ett namn på variabeln den sparat datan i, oftast temp1.
+
+Öva på att läsa ut values från temp1. Hur kan du hitta ett visst element i den? En viss key inuti ett visst element?

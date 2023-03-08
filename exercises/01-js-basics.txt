@@ -1,0 +1,13 @@
+Efter en intro i rasande tempo är det nu dags att öva lite i grupp och på egen hand.
+
+Öppna projektet som du lämnade in som Labb1 / eller valfri annan sida (vanilla, inte React). Har du ingen skapa ett nytt projekt, skapa index.html.
+
+Skapa en js-fil, döp den t.ex till app.js.
+
+Kristian rekommenderar alltid små bokstäver på alla fil-, och mappnamn. Säkrast är a-z, 0-9, - samt _.
+
+Inuti denna js-fil ska du nu skapa fyra olika funktioner. Dessa ska heta add, subtract, multiply och divide.
+
+Du får själv bestämma vad funktionerna ska göra, huvudsaken att de tar två argument vardera och returnerar något.
+
+Öva på att anropa dem från Console i dev tools. Funkar det som du tänkt dig? Om inte, kom du ihåg att länka in app.js i din html-fil?

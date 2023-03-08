@@ -1,0 +1,12 @@
+Utgå ifrån projektet du skapade i förra övningen (eller valfritt vanilla js-projekt).
+
+Skapa fyra stycken knappar och två inputfält. Skapa även en p-tagg som kan vara tom.
+
+Du ska nu bygga en *basic* miniräknare på en sida. Använd input-fälten för att läsa värden av användaren och p-taggen för att visa resultatet.
+
+Eventuellt kan du behöva lägga till en AC-knapp (All Clear).
+
+En sak att tänka på är att läsning och skrivning till DOM:en går till på liknande sätt. Antingen läser vi ett värde (oftast ett elements .innerText eller .value) men ibland vill vi sätta det.
+
+element.innerText <-- läser från DOM
+element.innerText = "Hej" <-- skriver till DOM.
