@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
+
+import ListList from '../components/ListList';
+
 function Portfolio() {
-    const [data, setData] = useState({ repos: [] });
+    const [data, setData] = useState({ work: [] });
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
             setIsLoading(true);
-
-            const result = await axios('https://api.github.com/users/juiceghost/repos');
+            // https://api.github.com/users/juiceghost/repos
+            const result = await axios('cv.json');
             console.log(result.data)
-            setData({ repos: result.data });
+            setData(result.data);
             setIsLoading(false);
         };
 
@@ -19,21 +22,16 @@ function Portfolio() {
     }, []);
     console.log("Hej från Portfolio")
 
+    const myName = "Krille";
     return (
         <>
             <h1>Portfolio</h1>
+            {/* <ListItem name={myName} role="Slacker" /> */}
             {isLoading ? (
                 <div>Loading ...</div>
             ) : (
-                <ul>
-                    {data.repos.map(item => (
-                        <li key={item.id}>
-                            <h4>{item.name}</h4>
-                            <p>{item.html_url}</p>
-                            <br></br>
-                        </li>
-                    ))}
-                </ul>
+                <ListList data={data} />
+
             )}
         </>
     );

@@ -1,14 +1,18 @@
 {
     "work": [
         {
+            "id": 1,
             "name": "Qlok",
-            "role": "Teacher"
+            "role": "Teacher",
+            "floor": 3
         },
         {
+            "id": 2,
             "name": "Varberg",
             "role": "Teacher"
         },
         {
+            "id": 3,
             "name": "Grassfish",
             "role": "Slacker"
         }
