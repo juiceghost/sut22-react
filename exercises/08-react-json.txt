@@ -1,0 +1,23 @@
+Nu ska vi försöka läsa in json-filen från 04 in i React. Kopiera över filen och lägg den inuti public/
+Välj en av komponenterna du skapade i 07, t.ex Hero och arbeta vidare i.
+
+Läs denna länk:
+
+https://dev.to/antdp425/react-fetch-data-from-api-with-useeffect-27le
+
+Notera särskilt imports, du behöver lägga till useState och useEffect named imports.
+Börja med att kopiera in allt från första raden inuti funktionen fram till (men inte inklusive) return.
+
+Istället för https://dog.ceo/api/breeds/image/random som står i exemplet ska du ange namnet på din .json-fil.
+
+Du behöver även ändra följande rad:
+let [dogImage, setDogImage] = useState(null)
+till:
+let [movies, setMovies] = useState([]) // Eller books eller vad du valt för data i json.
+
+Inuti din return behöver du nu göra samma sak som du gjorde i vanilla fast "The react way". Du ska inte skriva funktioner för createElement eftersom React är expert på detta redan.
+
+Studera hur Portfolio's return ser ut i detta repo. Kopiera in <ul>...</ul> in i din Hero-komponents return och se om du kan få det att funka.
+
+Jämför hur det initiala statet ser ut i Portfolio jämfört med hur det ser ut i din Hero-komponent.
+

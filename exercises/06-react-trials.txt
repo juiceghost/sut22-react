@@ -1,0 +1,18 @@
+Utgå ifrån projektet du skapade i 05, bekanta dig med projektstrukturen. Titta var App.jsx ligger (inuti src/) och skapa en ny fil som du döper till Hero.jsx.
+npm run dev ska vara igång, om den inte är det starta den.
+
+Du ska nu skapa din första egna React-komponent. Skapa en funktion som du döper till Hero som returnerar en h1:a med texten Hero inuti. Lägg till export default Hero på slutet.
+
+Hur ska du få Hero-komponenten att synas? Du måste säga till React att den ska renderas. Gå tillbaka till App.jsx och lägg till en import:
+
+import Hero from './Hero';
+
+Notera att .jsx inte ska finnas med i slutet av filnamnet i importen.
+
+För att något ska synas på sidan måste du även ha med Hero-komponenten i App's return någonstans. Lägg till den  där du vill.
+
+<Hero></Hero> eller <Hero />
+
+Spara filen (kolla att Hero.jsx också är sparad) och titta i Chrome. Om sidan är blank, öppna Console och läs det första felmeddelandet.
+
+Testa att lägga till Hero på fler ställen i App's return. Vad blir resultatet?

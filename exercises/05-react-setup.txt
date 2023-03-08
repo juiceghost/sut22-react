@@ -1,0 +1,13 @@
+Skapa ett nytt projekt (på rätt ställe) genom att skriva in följande kommando i en terminal:
+
+npm create vite@latest <projektnamn> -- --template react
+
+Om detta kommando ger ett error har du antagligen inte installera node ännu. Se Robin's bok för instruktioner eller googla. Om du kör mac, använd homebrew.
+Glöm inte att byta ut <projektnamn> mot något namn som inte redan är taget.
+
+Du får instruktioner i terminalen hur du ska göra, följ dem.
+
+Innan du skriver "npm run dev", skriv "code ." så att projektet öppnas i VS Code.
+Efter kommandot "npm run dev" får du upp en url i terminalen. Kopiera ut denna (Ctrl-Ins i VS Code) och klistra in i Chrome och besök sidan.
+
+Du ska nu manipulera sidans innehåll. Öppna App.jsx och studera dens return. Leta efter strängar här som du känner igen från sidan i Chrome. Testa ändra någon av dessa, t.ex genom att skriva ditt namn någonstans.

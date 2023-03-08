@@ -1,0 +1,27 @@
+Din Hero-komponent kanske inte riktigt ser ut som du önskar. Inuti Hero.jsx har du antagligen en h1:a:
+
+<h1>Hero</h1>
+
+Sätt en klass på din h1:a notera att i react görs det genom className:
+
+<h1 className="myHero">Hero</h1>
+
+Testa nu att lägga till ett css-direkt i App.css som ändrar färgen på texten för h1:an. Använd en klass-selektor.
+
+Skapa nu ytterligare 3 komponenter som du döper som du vill. Följ samma mönster som med Hero, men experimentera med lite mer innehåll inuti komponenteras return.
+
+Om du får ett error att JSX must be enclosed testa att lägga till ett s.k. Fragment:
+
+return (
+    <h1>Test</h1>
+    <p>Detta är ett test</p>
+)
+
+Detta ger error. Ändra till
+
+return (
+    <>
+        <h1>Test</h1>
+        <p>Detta är ett test</p>
+    </>
+)

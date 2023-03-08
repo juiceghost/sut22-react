@@ -35,7 +35,7 @@ Spara denna fil tillsammans med ditt projekt du använde i 01 och 02. Den bör l
 
 Du ska nu försöka hämta in denna fil i din JS-kod, förslagsvis genom fetch:
 
-Se t.ex https: //developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+Se t.ex https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 Om du loggar datan precis som i exemplet så kan du högerklicka på outputen i Console och välja Store as global variable. Den kommer då säga ett namn på variabeln den sparat datan i, oftast temp1.
 
