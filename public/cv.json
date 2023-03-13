@@ -15,6 +15,12 @@
             "id": 3,
             "name": "Grassfish",
             "role": "Slacker"
+        },
+        {
+            "id": 4,
+            "floor": 2,
+            "name": "SWenug",
+            "role": "Mascot"
         }
     ]
 }
