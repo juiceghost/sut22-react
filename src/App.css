@@ -28,3 +28,32 @@ footer {
   /* display: flex; */
   align-self: center;
 }
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  padding: 0 2em;
+  height: 25em;
+
+}
+
+.presentation>img {
+  max-width: 30em;
+  border-radius: 15px;
+}
+
+.presentation>p {
+  max-width: 30em;
+  order: 2;
+  align-self: flex-end;
+  margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 920px) {
+  .presentation {
+    flex-wrap: wrap;
+  }
+}

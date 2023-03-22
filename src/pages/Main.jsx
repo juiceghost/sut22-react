@@ -1,4 +1,5 @@
-import React, { useState } from 'React';
+import React, { useState } from 'react';
+import Presentation from '../components/Presentation';
 
 import RegistrationItem from '../components/RegistrationItem';
 
@@ -50,6 +51,7 @@ function Main() {
                 <button>Submit</button>
             </form>
             {registrations.map(registration => (<RegistrationItem email={registration.email} project={registration.project} hours={registration.hours} />))}
+            <Presentation />
         </>
     );
 }
